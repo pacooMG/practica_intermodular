@@ -45,11 +45,26 @@
                                           </Group>
                                           <Component id="Jlabel_sol_distancia" alignment="0" min="-2" pref="43" max="-2" attributes="0"/>
                                           <Component id="Jlabel_sol_temperatura" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
-                                          <Component id="Jlabel_sol_radio" min="-2" pref="59" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="Jlabel_sol_tipo" min="-2" pref="37" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="250" max="-2" attributes="0"/>
-                                              <Component id="jLabel22" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <Component id="jLabel22" min="-2" pref="66" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="Jlabel_sol_radio" min="-2" pref="59" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="jBsatelite3" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="jBsatelite4" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jBsatelite1" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="jBsatelite2" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -136,35 +151,43 @@
                                   <Component id="jLabel1" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                                   <Component id="jLabel8" alignment="0" min="-2" pref="108" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel21" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="JLMasa" min="-2" pref="43" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel10" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="JLRadio" min="-2" pref="43" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="JLDistancia" min="-2" pref="43" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel23" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="JLTipo" min="-2" pref="43" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel24" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="JLNSate" min="-2" pref="43" max="-2" attributes="0"/>
-                                          <Component id="JLNombre" min="-2" pref="43" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel21" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="JLMasa" min="-2" pref="43" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel10" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="JLRadio" min="-2" pref="43" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="JLDistancia" min="-2" pref="43" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel23" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="JLTipo" min="-2" pref="43" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel24" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="JLNSate" min="-2" pref="43" max="-2" attributes="0"/>
+                                                  <Component id="JLNombre" min="-2" pref="43" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="339" max="-2" attributes="0"/>
+                                      <Component id="jLabel25" min="-2" pref="68" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -244,10 +267,22 @@
                           <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="JLNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="JLNSate" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jBsatelite1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBsatelite2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jBsatelite3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBsatelite4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -469,19 +504,10 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="JLRadio">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel22"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="JLDistancia">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel22"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="JLMasa">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel22"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel23">
       <Properties>
@@ -494,14 +520,8 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="JLTipo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel25"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="JLNombre">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel26"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
@@ -565,8 +585,42 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="JLNSate">
+    </Component>
+    <Component class="javax.swing.JButton" name="jBsatelite1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel25"/>
+        <Property name="text" type="java.lang.String" value="jButton8"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBsatelite1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBsatelite3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton9"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBsatelite3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBsatelite2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton10"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBsatelite2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBsatelite4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton11"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBsatelite4ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Satelites"/>
       </Properties>
     </Component>
   </SubComponents>

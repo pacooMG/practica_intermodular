@@ -6,7 +6,6 @@ package tema14.practica_intermodular;
 
 import java.sql.Array;
 
-
 /**
  *
  * @author Usuario
@@ -18,6 +17,10 @@ public class FramePrincipal extends javax.swing.JFrame {
      */
     public FramePrincipal() {
         initComponents();
+        jBsatelite1.setVisible(false);
+        jBsatelite2.setVisible(false);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
     }
 
     /**
@@ -74,6 +77,11 @@ public class FramePrincipal extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         JLNSate = new javax.swing.JLabel();
+        jBsatelite1 = new javax.swing.JButton();
+        jBsatelite3 = new javax.swing.JButton();
+        jBsatelite2 = new javax.swing.JButton();
+        jBsatelite4 = new javax.swing.JButton();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -149,19 +157,9 @@ public class FramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        JLRadio.setText("jLabel22");
-
-        JLDistancia.setText("jLabel22");
-
-        JLMasa.setText("jLabel22");
-
         jLabel23.setText("Tipo");
 
         jLabel24.setText("Nombre");
-
-        JLTipo.setText("jLabel25");
-
-        JLNombre.setText("jLabel26");
 
         jButton1.setText("Tierra");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -214,7 +212,35 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         jLabel22.setText("nªSatelite");
 
-        JLNSate.setText("jLabel25");
+        jBsatelite1.setText("jButton8");
+        jBsatelite1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBsatelite1ActionPerformed(evt);
+            }
+        });
+
+        jBsatelite3.setText("jButton9");
+        jBsatelite3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBsatelite3ActionPerformed(evt);
+            }
+        });
+
+        jBsatelite2.setText("jButton10");
+        jBsatelite2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBsatelite2ActionPerformed(evt);
+            }
+        });
+
+        jBsatelite4.setText("jButton11");
+        jBsatelite4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBsatelite4ActionPerformed(evt);
+            }
+        });
+
+        jLabel25.setText("Satelites");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -240,11 +266,22 @@ public class FramePrincipal extends javax.swing.JFrame {
                                                 .addComponent(Jlabel_sol_composicion, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addComponent(Jlabel_sol_distancia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(Jlabel_sol_temperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Jlabel_sol_radio, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(Jlabel_sol_tipo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(250, 250, 250)
-                                                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(Jlabel_sol_radio, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(219, 219, 219)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(jBsatelite3)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(jBsatelite4))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addComponent(jBsatelite1)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(jBsatelite2))))))
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
@@ -308,30 +345,35 @@ public class FramePrincipal extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(294, 294, 294)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(JLMasa, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(JLRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel20)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(JLDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(JLTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
+                                        .addGap(294, 294, 294)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(JLNSate, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(JLNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(JLMasa, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(JLRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel20)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(JLDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(JLTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(JLNSate, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(JLNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(339, 339, 339)
+                                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -391,10 +433,20 @@ public class FramePrincipal extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel24)
                             .addComponent(JLNombre))
-                        .addGap(60, 60, 60)
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel22)
-                            .addComponent(JLNSate))))
+                            .addComponent(JLNSate))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jBsatelite1)
+                            .addComponent(jBsatelite2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jBsatelite3)
+                            .addComponent(jBsatelite4))))
                 .addGap(76, 76, 76)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -431,90 +483,240 @@ public class FramePrincipal extends javax.swing.JFrame {
     private void bRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRadioActionPerformed
         // TODO add your handling code here:
         ConexionBase conexion = new ConexionBase();
-        String []datosMarte = conexion.conectarConsultarMarte();
+        String[] datosMarte = conexion.conectarConsultarMarte();
         JLRadio.setText(datosMarte[0]);
         JLDistancia.setText(datosMarte[1]);
         JLMasa.setText(datosMarte[3]);
         JLNombre.setText(datosMarte[2]);
         JLTipo.setText(datosMarte[2]);
+        jBsatelite1.setVisible(true);
+        jBsatelite2.setVisible(true);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
+        jBsatelite1.setText("Fobos");
+        jBsatelite2.setText("Deimos");
     }//GEN-LAST:event_bRadioActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-          ConexionBase conexion = new ConexionBase();
-        String []datosTierra = conexion.conectarConsultarTierra();
+        ConexionBase conexion = new ConexionBase();
+        String[] datosTierra = conexion.conectarConsultarTierra();
         JLRadio.setText(datosTierra[0]);
         JLDistancia.setText(datosTierra[1]);
         JLMasa.setText(datosTierra[3]);
         JLNombre.setText(datosTierra[2]);
-        JLTipo.setText(datosTierra[2]);  
+        JLTipo.setText(datosTierra[2]);
+        jBsatelite1.setVisible(true);
+        jBsatelite2.setVisible(false);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
+        jBsatelite1.setText("Luna");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         ConexionBase conexion = new ConexionBase();
-        String []datosVenus = conexion.conectarConsultarVenus();
+        String[] datosVenus = conexion.conectarConsultarVenus();
         JLRadio.setText(datosVenus[0]);
         JLDistancia.setText(datosVenus[1]);
         JLMasa.setText(datosVenus[3]);
         JLNombre.setText(datosVenus[2]);
         JLTipo.setText(datosVenus[2]);
+        jBsatelite1.setVisible(false);
+        jBsatelite2.setVisible(false);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-          ConexionBase conexion = new ConexionBase();
-        String []datosMercurio = conexion.conectarConsultarMercurio();
+        ConexionBase conexion = new ConexionBase();
+        String[] datosMercurio = conexion.conectarConsultarMercurio();
         JLRadio.setText(datosMercurio[0]);
         JLDistancia.setText(datosMercurio[1]);
         JLMasa.setText(datosMercurio[3]);
         JLNombre.setText(datosMercurio[2]);
         JLTipo.setText(datosMercurio[2]);
+        jBsatelite1.setVisible(false);
+        jBsatelite2.setVisible(false);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-           ConexionBase conexion = new ConexionBase();
-        String []datosJupiter = conexion.conectarConsultarJupiter();
+        ConexionBase conexion = new ConexionBase();
+        String[] datosJupiter = conexion.conectarConsultarJupiter();
         JLRadio.setText(datosJupiter[0]);
         JLDistancia.setText(datosJupiter[1]);
         JLMasa.setText(datosJupiter[3]);
         JLNombre.setText(datosJupiter[2]);
         JLTipo.setText(datosJupiter[2]);
+        jBsatelite1.setVisible(true);
+        jBsatelite2.setVisible(true);
+        jBsatelite3.setVisible(true);
+        jBsatelite4.setVisible(true);
+        jBsatelite1.setText("Io");
+        jBsatelite2.setText("Europa");
+        jBsatelite3.setText("Ganimedes");
+        jBsatelite4.setText("Calisto");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-            ConexionBase conexion = new ConexionBase();
-        String []datosSaturno = conexion.conectarConsultarSaturno();
+        ConexionBase conexion = new ConexionBase();
+        String[] datosSaturno = conexion.conectarConsultarSaturno();
         JLRadio.setText(datosSaturno[0]);
         JLDistancia.setText(datosSaturno[1]);
         JLMasa.setText(datosSaturno[3]);
         JLNombre.setText(datosSaturno[2]);
         JLTipo.setText(datosSaturno[2]);
+        jBsatelite1.setVisible(true);
+        jBsatelite2.setVisible(true);
+         jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
+        jBsatelite1.setText("Titan");
+        jBsatelite2.setText("Encelado");
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-             ConexionBase conexion = new ConexionBase();
-        String []datosUrano = conexion.conectarConsultarUrano();
+        ConexionBase conexion = new ConexionBase();
+        String[] datosUrano = conexion.conectarConsultarUrano();
         JLRadio.setText(datosUrano[0]);
         JLDistancia.setText(datosUrano[1]);
         JLMasa.setText(datosUrano[3]);
         JLNombre.setText(datosUrano[2]);
         JLTipo.setText(datosUrano[2]);
+        jBsatelite1.setVisible(true);
+        jBsatelite2.setVisible(true);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
+        jBsatelite1.setText("Titania");
+        jBsatelite2.setText("Oberon");
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         ConexionBase conexion = new ConexionBase();
-        String []datosNeptuno = conexion.conectarConsultarNeptuno();
+        String[] datosNeptuno = conexion.conectarConsultarNeptuno();
         JLRadio.setText(datosNeptuno[0]);
         JLDistancia.setText(datosNeptuno[1]);
         JLMasa.setText(datosNeptuno[3]);
         JLNombre.setText(datosNeptuno[2]);
         JLTipo.setText(datosNeptuno[2]);
+        jBsatelite1.setVisible(false);
+        jBsatelite2.setVisible(false);
+        jBsatelite3.setVisible(false);
+        jBsatelite4.setVisible(false);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jBsatelite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBsatelite1ActionPerformed
+        if (jBsatelite1.getText().equalsIgnoreCase("fobos")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosFobos = conexion.conectarConsultarFobos();
+            JLRadio.setText(datosFobos[0]);
+            JLDistancia.setText(datosFobos[1]);
+            JLMasa.setText(datosFobos[3]);
+            JLNombre.setText(datosFobos[2]);
+            JLTipo.setText(datosFobos[2]);
+        }else if (jBsatelite1.getText().equalsIgnoreCase("Luna")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosLuna = conexion.conectarConsultarLuna();
+            JLRadio.setText(datosLuna[0]);
+            JLDistancia.setText(datosLuna[1]);
+            JLMasa.setText(datosLuna[3]);
+            JLNombre.setText(datosLuna[2]);
+            JLTipo.setText(datosLuna[2]);
+        }else if (jBsatelite1.getText().equalsIgnoreCase("Io")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosIo = conexion.conectarConsultarIo();
+            JLRadio.setText(datosIo[0]);
+            JLDistancia.setText(datosIo[1]);
+            JLMasa.setText(datosIo[3]);
+            JLNombre.setText(datosIo[2]);
+            JLTipo.setText(datosIo[2]);
+        }else if (jBsatelite1.getText().equalsIgnoreCase("Titan")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosTitan = conexion.conectarConsultarTitan();
+            JLRadio.setText(datosTitan[0]);
+            JLDistancia.setText(datosTitan[1]);
+            JLMasa.setText(datosTitan[3]);
+            JLNombre.setText(datosTitan[2]);
+            JLTipo.setText(datosTitan[2]);
+        }else if (jBsatelite1.getText().equalsIgnoreCase("Titania")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosTitania = conexion.conectarConsultarTitan();
+            JLRadio.setText(datosTitania[0]);
+            JLDistancia.setText(datosTitania[1]);
+            JLMasa.setText(datosTitania[3]);
+            JLNombre.setText(datosTitania[2]);
+            JLTipo.setText(datosTitania[2]);
+        }
+    }//GEN-LAST:event_jBsatelite1ActionPerformed
+
+    private void jBsatelite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBsatelite2ActionPerformed
+        // TODO add your handling code here:
+        if (jBsatelite2.getText().equalsIgnoreCase("Deimos")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosDeimos = conexion.conectarConsultarDeimos();
+            JLRadio.setText(datosDeimos[0]);
+            JLDistancia.setText(datosDeimos[1]);
+            JLMasa.setText(datosDeimos[3]);
+            JLNombre.setText(datosDeimos[2]);
+            JLTipo.setText(datosDeimos[2]);
+        }else if (jBsatelite2.getText().equalsIgnoreCase("Europa")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosEuropa = conexion.conectarConsultarEuropa();
+            JLRadio.setText(datosEuropa[0]);
+            JLDistancia.setText(datosEuropa[1]);
+            JLMasa.setText(datosEuropa[3]);
+            JLNombre.setText(datosEuropa[2]);
+            JLTipo.setText(datosEuropa[2]);
+        }else if (jBsatelite2.getText().equalsIgnoreCase("Encelado")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosEncelado = conexion.conectarConsultarEncelado();
+            JLRadio.setText(datosEncelado[0]);
+            JLDistancia.setText(datosEncelado[1]);
+            JLMasa.setText(datosEncelado[3]);
+            JLNombre.setText(datosEncelado[2]);
+            JLTipo.setText(datosEncelado[2]);
+        }else if (jBsatelite2.getText().equalsIgnoreCase("Oberon")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosOberon = conexion.conectarConsultarEncelado();
+            JLRadio.setText(datosOberon[0]);
+            JLDistancia.setText(datosOberon[1]);
+            JLMasa.setText(datosOberon[3]);
+            JLNombre.setText(datosOberon[2]);
+            JLTipo.setText(datosOberon[2]);
+        }
+    }//GEN-LAST:event_jBsatelite2ActionPerformed
+
+    private void jBsatelite3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBsatelite3ActionPerformed
+        // TODO add your handling code here:
+        if (jBsatelite3.getText().equalsIgnoreCase("Ganimedes")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosGanimedes = conexion.conectarConsultarDeimos();
+            JLRadio.setText(datosGanimedes [0]);
+            JLDistancia.setText(datosGanimedes [1]);
+            JLMasa.setText(datosGanimedes [3]);
+            JLNombre.setText(datosGanimedes[2]);
+            JLTipo.setText(datosGanimedes [2]);
+        }
+    }//GEN-LAST:event_jBsatelite3ActionPerformed
+
+    private void jBsatelite4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBsatelite4ActionPerformed
+        // TODO add your handling code here:
+         if (jBsatelite4.getText().equalsIgnoreCase("Calisto")) {
+            ConexionBase conexion = new ConexionBase();
+            String[] datosCalisto = conexion.conectarConsultarCalisto();
+            JLRadio.setText(datosCalisto [0]);
+            JLDistancia.setText(datosCalisto [1]);
+            JLMasa.setText(datosCalisto [3]);
+            JLNombre.setText(datosCalisto[2]);
+            JLTipo.setText(datosCalisto [2]);
+        }
+    }//GEN-LAST:event_jBsatelite4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -565,6 +767,10 @@ public class FramePrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel Jlabel_sol_temperatura;
     private javax.swing.JLabel Jlabel_sol_tipo;
     private javax.swing.JButton bRadio;
+    private javax.swing.JButton jBsatelite1;
+    private javax.swing.JButton jBsatelite2;
+    private javax.swing.JButton jBsatelite3;
+    private javax.swing.JButton jBsatelite4;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -589,6 +795,7 @@ public class FramePrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
